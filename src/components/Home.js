@@ -8,21 +8,21 @@ export default function Home() {
       <img
         src={image}
         alt="Saharsh Image"
-        className="absolute justify-cover w-full h-full"
+        className="absolute justify-left w-full h-full"
       />
-      <section className="relative flex cursive">
-        <h1 className="typewriter my-40 text-8xl text-blue-300">
+      <section className="relative flex cursive justify-center">
+        <h1 className="text-8xl text-blue-300">
           SAHARSH
         </h1>
-        <h1 className="typewriter my-40 mx-10 text-8xl text-white">
+        <h1 className="mx-10 text-8xl text-white">
           KHICHA
         </h1>
       </section>
-      <section className="relative flex cursive">
-      <h2 className="mx-30 text-3xl text-white">
+      <div className="absolute flex cursive my-80 mx-80 text-4xl text-white">
+      <h2 className="justify-center typewriter my-40 mx-20">
           I'm a student. Web Developer. Software Engineer. Biologist
       </h2>
-      </section>
+      </div>
     </main>
     );
 }
