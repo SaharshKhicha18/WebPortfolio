@@ -9,7 +9,7 @@ export default function NavBar() {
     const splitLocation = pathname.split("/");
     
   return (
-    <header className="bg-blue-400">
+    <header className="bg-black">
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink
@@ -22,24 +22,24 @@ export default function NavBar() {
           </NavLink>
           <NavLink
             to="/about"
-            className= {splitLocation[1] === "about" ? "act" : "inline-flex items-center py-3 px-3 my-3 rounded hover:text-pink-300 cursive"}
+            className= {splitLocation[1] === "about" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 rounded hover:text-pink-300 cursive"}
             activeClassName="act"
           >
             About Me!
           </NavLink>
           <NavLink
             to="/project"
-            className={splitLocation[1] === "project" ? "act" : "inline-flex items-center py-3 px-3 my-3 rounded hover:text-green-300 cursive"}
+            className={splitLocation[1] === "project" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 rounded hover:text-green-300 cursive"}
             activeClassName="act"
           >
             Projects
           </NavLink>
           <NavLink
             to="/post"
-            className={splitLocation[1] === "post" ? "act" : "inline-flex items-center py-3 px-3 my-3 rounded hover:text-red-500 cursive"}
+            className={splitLocation[1] === "post" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 rounded hover:text-red-500 cursive"}
             activeClassName="act"
           >
-            Blog Posts
+            Resume
           </NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
