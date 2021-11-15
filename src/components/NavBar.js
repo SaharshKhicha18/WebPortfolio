@@ -10,33 +10,40 @@ export default function NavBar() {
     
   return (
     <header className="bg-black">
-      <div className="container mx-auto flex justify-between">
+      <div className=" container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-8 px-3 mr-4 text-red-100 hover:text-yellow-400 text-3xl font-bold cursive"
+            className="inflex-flex items-center py-8 px-3 mr-4 text-red-100 hover:text-yellow-400 text-5xl font-bold cursive"
           >
             Saharsh
           </NavLink>
           <NavLink
             to="/about"
-            className= {splitLocation[1] === "about" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 rounded hover:text-pink-300 cursive"}
+            className= {splitLocation[1] === "about" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 text-2xl rounded hover:text-pink-300 cursive"}
             activeClassName="act"
           >
             About Me!
           </NavLink>
           <NavLink
             to="/project"
-            className={splitLocation[1] === "project" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 rounded hover:text-green-300 cursive"}
+            className={splitLocation[1] === "project" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 text-2xl rounded hover:text-green-300 cursive"}
             activeClassName="act"
           >
             Projects
           </NavLink>
           <NavLink
             to="/post"
-            className={splitLocation[1] === "post" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 rounded hover:text-red-500 cursive"}
+            className={splitLocation[1] === "post" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 text-2xl rounded hover:text-red-500 cursive"}
+            activeClassName="act"
+          >
+            Publications
+          </NavLink>
+          <NavLink
+            to="/resume"
+            className={splitLocation[1] === "resume" ? "act" : "text-white inline-flex items-center py-3 px-3 my-3 text-2xl rounded hover:text-purple-500 cursive"}
             activeClassName="act"
           >
             Resume

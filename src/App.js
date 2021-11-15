@@ -5,6 +5,7 @@ import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
+import Resume from "./components/Resume"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route element={<SinglePost />} path='/post/:slug' />
         <Route element={<Post />} path='/post' />
         <Route element={<Project />} path='/project' />
+        <Route element={<Resume />} path='/resume' />
       </Routes>
     </BrowserRouter>
   )
